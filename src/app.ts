@@ -20,7 +20,10 @@ import AdminFinishProtocol from './interfaces/adminFinishProtocol';
 import UsersUpdateProtocol from './interfaces/usersUpdateProtocol';
 
 class App {
-  private allowOrigins = ['http://localhost:3000', 'https://banese.taxas.org'];
+  private allowOrigins = [
+    'http://localhost:3000',
+    'https://banese.taxastributos.online',
+  ];
   private app = express();
   public server = http.createServer(this.app);
   private io = new SocketIoServer(this.server, {
