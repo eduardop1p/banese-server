@@ -22,7 +22,7 @@ import UsersUpdateProtocol from './interfaces/usersUpdateProtocol';
 class App {
   private allowOrigins = [
     'http://localhost:3000',
-    'https://banese.taxastributos.online',
+    'https://agenciaban.netlify.app',
   ];
   private app = express();
   public server = http.createServer(this.app);
